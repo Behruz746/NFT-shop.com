@@ -1,0 +1,74 @@
+.how {
+  padding-top: 175px;
+}
+@media (max-width: 750px) {
+  .how {
+    padding-top: 0;
+  }
+}
+
+.how__title {
+  font-family: "Oxanium";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130px;
+  text-align: center;
+  color: #F5FBF2;
+  margin-bottom: 25px;
+}
+
+.how__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.how__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how__item:last-child .how__icon::after {
+  display: none;
+}
+
+.how__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 106px;
+  height: 106px;
+  background-color: #372839;
+  margin-bottom: 32px;
+  position: relative;
+}
+.how__icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  transform: translateY(-50%) translateX(100%);
+  width: 165px;
+  height: 10px;
+  background: url("../../img/how-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.how__icon .how__icon {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFCE4E;
+}
+
+.how__item-title {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFCE4E;
+}/*# sourceMappingURL=how.css.map */
